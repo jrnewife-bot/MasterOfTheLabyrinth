@@ -1,0 +1,330 @@
+# Labyrinth Generation Architecture
+
+Version: 0.1
+
+Status: Draft
+
+---
+
+# Purpose
+
+The Labyrinth is not procedurally generated in the traditional sense.
+
+Instead, every run is assembled from handcrafted rooms.
+
+The goal is to ensure that every player experiences a unique journey while preserving the identity and quality of every environment.
+
+The Master does not create rooms.
+
+The Master creates experiences.
+
+---
+
+# Core Philosophy
+
+Every room is designed by hand.
+
+Every run is assembled dynamically.
+
+Players should recognize rooms.
+
+They should never recognize the path.
+
+Watching another player's walkthrough should provide knowledge, not solutions.
+
+---
+
+# Generation Layers
+
+The Labyrinth is built in three independent layers.
+
+## Layer 1 - Room Library
+
+A collection of handcrafted rooms.
+
+Each room has:
+
+- Unique architecture
+- Visual identity
+- Lighting
+- Gameplay purpose
+- Metadata
+
+Example:
+
+Room_Entrance
+
+Room_Hall
+
+Room_Bridge
+
+Room_Tower
+
+Room_Crossroads
+
+Room_Pit
+
+Room_Shrine
+
+Room_Final
+
+Rooms never contain fixed traps.
+
+They only define where traps may exist.
+
+---
+
+## Layer 2 - Connections
+
+Every room exposes one or more connection points.
+
+Example
+
+North
+
+South
+
+East
+
+West
+
+Each connection contains metadata.
+
+Connection Type
+
+- Normal
+- Large
+- Secret
+- Exit
+- Locked
+
+Only compatible connections may be linked together.
+
+This guarantees valid layouts.
+
+---
+
+## Layer 3 - The Master
+
+The Master is responsible for assembling the Labyrinth.
+
+Instead of selecting random rooms, the Master builds an experience.
+
+The Master decides:
+
+- Number of rooms
+- Difficulty progression
+- Special rooms
+- Secret paths
+- Trap density
+- Exploration opportunities
+
+The Master never creates impossible situations.
+
+---
+
+# Room Metadata
+
+Every room contains gameplay information.
+
+Example
+
+Room Type
+
+- Entrance
+- Corridor
+- Puzzle
+- Challenge
+- Rest
+- Treasure
+- Exit
+
+Difficulty
+
+1-5
+
+Trap Slots
+
+Number of possible trap locations.
+
+Recommended Progression
+
+Early
+
+Middle
+
+Late
+
+Tags
+
+Bridge
+
+Fire
+
+Open Area
+
+Vertical
+
+Water
+
+Dark
+
+Sacred
+
+This information is used by the Master during generation.
+
+---
+
+# Trap Slots
+
+Rooms never contain predefined traps.
+
+Instead, rooms contain Trap Slots.
+
+Example
+
+TrapSlot_A
+
+TrapSlot_B
+
+TrapSlot_C
+
+A Trap Slot only defines:
+
+- Position
+- Direction
+- Allowed trap types
+
+Example
+
+TrapSlot_A
+
+Allowed
+
+✓ Arrow Trap
+
+✓ Spike Trap
+
+✓ Pendulum
+
+✗ Boulder
+
+The Master chooses which trap to place.
+
+Or chooses to leave the slot empty.
+
+---
+
+# Modular Corridors
+
+Corridors are independent modules.
+
+Examples
+
+Straight
+
+Corner
+
+Bridge
+
+Stairs
+
+Large Hallway
+
+Collapsed Hallway
+
+The Master connects rooms using corridor modules.
+
+---
+
+# Difficulty Curve
+
+The Labyrinth should tell a story.
+
+Difficulty is not random.
+
+Every run follows a progression.
+
+Example
+
+Learning
+
+↓
+
+Observation
+
+↓
+
+Pressure
+
+↓
+
+Recovery
+
+↓
+
+Challenge
+
+↓
+
+Final Trial
+
+The Master builds the Labyrinth around this curve.
+
+---
+
+# Fairness
+
+The Master follows strict rules.
+
+Never create unavoidable deaths.
+
+Never place impossible trap combinations.
+
+Never block every escape route.
+
+Never require previous knowledge.
+
+Every failure should teach something.
+
+---
+
+# Replayability
+
+Players should recognize environments.
+
+Players should never memorize the entire route.
+
+Knowledge should improve decision making.
+
+Never solve the Labyrinth.
+
+---
+
+# Future Expansion
+
+The architecture allows future additions without changing the generation system.
+
+Possible future features
+
+- New room themes
+- New Masters
+- Seasonal rooms
+- Dynamic events
+- Boss rooms
+- Environmental hazards
+- Multiplayer challenges
+
+Everything integrates into the existing generation pipeline.
+
+---
+
+# Design Goal
+
+Every run should feel handcrafted.
+
+Every run should feel different.
+
+The player should remember stories.
+
+Not layouts.
