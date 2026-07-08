@@ -1,0 +1,203 @@
+# Master Of The Labyrinth
+## Project Manifest
+
+Version: 0.1
+Status: Active
+
+---
+
+# Why are we making this game?
+
+Master Of The Labyrinth is not a game about surviving traps.
+
+It is a game about proving yourself worthy.
+
+The player is not trying to defeat the Master.
+
+The player is trying to become the next Master.
+
+Every room...
+Every trap...
+Every decision...
+
+...is part of a test.
+
+The Labyrinth does not seek death.
+
+It seeks someone capable of understanding it.
+
+---
+
+# Design Philosophy
+
+Whenever a new mechanic is proposed, it must reinforce at least one of these principles.
+
+If it does not, it should not be part of the game.
+
+---
+
+## 1. The Labyrinth is Alive
+
+The Labyrinth is not a map.
+
+It is a character.
+
+It observes.
+
+It reacts.
+
+It tests.
+
+Everything that happens inside it has a purpose.
+
+---
+
+## 2. Every Trap Must Be Fair
+
+The player should never die without a chance to react.
+
+Every trap must communicate itself through:
+
+- Sound
+- Environment
+- Animation
+- Timing
+
+Failure should always teach something.
+
+---
+
+## 3. Knowledge Is Progress
+
+There are no levels.
+
+There is no experience system.
+
+There are no skill trees.
+
+The only real progression is the player's knowledge.
+
+Learning the Labyrinth is becoming stronger.
+
+---
+
+## 4. Observation Is More Valuable Than Reflexes
+
+Fast reactions are useful.
+
+Observation is essential.
+
+Players who pay attention to details should always have an advantage.
+
+---
+
+## 5. The Labyrinth Never Cheats
+
+The Master challenges.
+
+The Master does not deceive.
+
+Randomness exists only to create new situations.
+
+Never to create impossible situations.
+
+---
+
+## 6. Every Run Should Tell a Story
+
+Players should remember situations.
+
+Not statistics.
+
+Examples:
+
+"I escaped while limping."
+
+"I heard the trap before seeing it."
+
+"I almost reached the exit."
+
+"I trusted the wrong corridor."
+
+Those stories are the real reward.
+
+---
+
+## 7. Simplicity First
+
+Complexity is earned.
+
+Every mechanic must be understandable.
+
+If an idea requires a long explanation,
+it probably does not belong in the game.
+
+---
+
+## 8. The Environment Is The Interface
+
+Avoid unnecessary HUD elements.
+
+The world itself should communicate:
+
+Danger.
+
+Direction.
+
+Events.
+
+Secrets.
+
+The player should learn to read the Labyrinth.
+
+---
+
+## 9. The Master Is Not The Enemy
+
+The Master is the examiner.
+
+The player is the candidate.
+
+Death is failure.
+
+Victory is recognition.
+
+---
+
+## 10. Becoming The Master
+
+Escaping the Labyrinth is not the end.
+
+It is merely the final proof.
+
+The greatest reward is not freedom.
+
+It is inheritance.
+
+One day...
+
+The player may become the next Master.
+
+---
+
+# Development Philosophy
+
+This project values quality over quantity.
+
+A single memorable room is better than ten forgettable ones.
+
+A single excellent trap is better than twenty mediocre traps.
+
+A mechanic only exists if it improves the experience.
+
+---
+
+# Internal Motto
+
+"The Labyrinth does not punish.
+
+It evaluates."
+
+---
+
+End of Manifest
